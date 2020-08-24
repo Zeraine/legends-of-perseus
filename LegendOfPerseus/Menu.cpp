@@ -4,10 +4,10 @@
 
 Menu::Menu(void)
 {
-	titleScreenImage.loadFromFile("TitleScreen.png"); // replace with actual background
+	titleScreenImage.loadFromFile("Images/TitleScreen.png"); // replace with actual background
 	menuImage.setTexture(titleScreenImage);
 	menuImage.setScale(1.0f, 1.0f);
-	font.loadFromFile("arcade.ttf");
+	font.loadFromFile("Font/arcade.ttf");
 	gameOver = false;
 	victory = false;
 }
@@ -28,7 +28,7 @@ void Menu::Draw(sf::RenderWindow &window)
 	{
 		window.clear(sf::Color::Black);
 		text.setPosition(350, 180);
-		text.setColor(sf::Color::White);
+		text.setFillColor(sf::Color::White);
 		text.setFont(font);
 		text.setString("   Game Over\n\n" + toString(score));
 		window.draw(text);
@@ -38,7 +38,7 @@ void Menu::Draw(sf::RenderWindow &window)
 	{
 		window.clear(sf::Color::Black);
 		text.setPosition(350, 180);
-		text.setColor(sf::Color::White);
+		text.setFillColor(sf::Color::White);
 		text.setFont(font);
 		text.setString("Congratulations!\nYou have defeated the chimera\nand saved your people\n\n" + toString(score));
 		window.draw(text);

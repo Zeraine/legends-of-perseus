@@ -9,7 +9,7 @@ MedusaHead::MedusaHead(float x, float y)
 	position = sf::Vector2f(x, y);
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("medusahead.png"))
+	if (!texture.loadFromFile("Images/medusahead.png"))
 	{
 		std::cout << "Failed to Load image";
 	} else {

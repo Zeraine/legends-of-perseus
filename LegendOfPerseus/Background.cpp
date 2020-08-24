@@ -6,8 +6,8 @@ using namespace std;
 Background::Background(void)
 {
 	srand (time(NULL));
-	backgroundimage.loadFromFile("Background.jpg"); //Loads the background image
-	cloudimage.loadFromFile("Cloud.png"); //Loads the cloud image
+	backgroundimage.loadFromFile("Images/Background.jpg"); //Loads the background image
+	cloudimage.loadFromFile("Images/Cloud.png"); //Loads the cloud image
 	for (int i = 0; i < 2; i++)
 	{
 		background[i].setTexture(backgroundimage); //loads the background texture into the sprites

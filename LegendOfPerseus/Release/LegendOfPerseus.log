@@ -1,0 +1,90 @@
+﻿Build started 2020-08-23 6:36:43 PM.
+     1>Project "C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\LegendOfPerseus\LegendOfPerseus.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"SFML-2.5.1\include\\" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D SFML_DYNAMIC /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\LegendOfPerseus.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"SFML-2.5.1\include\\" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D SFML_DYNAMIC /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\LegendOfPerseus.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Background.cpp Chimera.cpp Fireball.cpp FollowMonster.cpp GameObject.cpp HoverMonster.cpp Hud.cpp LegendOfPerseus.cpp LevelLoader.cpp LionHead.cpp MedusaHead.cpp Menu.cpp Monster.cpp Perseus.cpp RamHead.cpp ReflectedProjectile.cpp SnakeHead.cpp Spear.cpp Sword.cpp TestMonster.cpp
+         Background.cpp
+     1>Background.cpp(8): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>Background.cpp(39): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>Background.cpp(40): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Chimera.cpp
+         Fireball.cpp
+         FollowMonster.cpp
+     1>FollowMonster.cpp(21): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>FollowMonster.cpp(43): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FollowMonster.cpp(47): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FollowMonster.cpp(52): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FollowMonster.cpp(56): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FollowMonster.cpp(62): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         GameObject.cpp
+         HoverMonster.cpp
+     1>HoverMonster.cpp(8): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>HoverMonster.cpp(23): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>HoverMonster.cpp(33): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>HoverMonster.cpp(87): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>HoverMonster.cpp(90): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>HoverMonster.cpp(141): warning C4552: '-' : operator has no effect; expected operator with side-effect
+     1>HoverMonster.cpp(142): warning C4552: '+' : operator has no effect; expected operator with side-effect
+         Hud.cpp
+     1>Hud.cpp(16): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         LegendOfPerseus.cpp
+         LevelLoader.cpp
+     1>LevelLoader.cpp(27): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>LevelLoader.cpp(87): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>LevelLoader.cpp(90): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>LevelLoader.cpp(93): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>LevelLoader.cpp(96): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>LevelLoader.cpp(111): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         LionHead.cpp
+     1>LionHead.cpp(20): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         MedusaHead.cpp
+         Menu.cpp
+         Monster.cpp
+         Perseus.cpp
+         RamHead.cpp
+     1>RamHead.cpp(19): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         ReflectedProjectile.cpp
+         SnakeHead.cpp
+     1>SnakeHead.cpp(20): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Spear.cpp
+         Sword.cpp
+     1>Sword.cpp(45): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+         TestMonster.cpp
+     1>TestMonster.cpp(20): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>TestMonster.cpp(50): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>TestMonster.cpp(53): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\res.res" res.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\Release\LegendOfPerseus.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.5.1\lib" "sfml-system.lib" "sfml-main.lib" "sfml-graphics.lib" "sfml-audio.lib" "sfml-network.lib" "sfml-window.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\Release\LegendOfPerseus.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\Release\LegendOfPerseus.lib" /MACHINE:X86 /SAFESEH Release\res.res
+         Release\Background.obj
+         Release\Chimera.obj
+         Release\Fireball.obj
+         Release\FollowMonster.obj
+         Release\GameObject.obj
+         Release\HoverMonster.obj
+         Release\Hud.obj
+         Release\LegendOfPerseus.obj
+         Release\LevelLoader.obj
+         Release\LionHead.obj
+         Release\MedusaHead.obj
+         Release\Menu.obj
+         Release\Monster.obj
+         Release\Perseus.obj
+         Release\RamHead.obj
+         Release\ReflectedProjectile.obj
+         Release\SnakeHead.obj
+         Release\Spear.obj
+         Release\stdafx.obj
+         Release\Sword.obj
+         Release\TestMonster.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+         Generating code
+         Finished generating code
+         LegendOfPerseus.vcxproj -> C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\Release\LegendOfPerseus.exe
+     1>Done Building Project "C:\Users\Geoff\Documents\legends-of-perseus\legends-of-perseus-master\LegendOfPerseus\LegendOfPerseus.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.94

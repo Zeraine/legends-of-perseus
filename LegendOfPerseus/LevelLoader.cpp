@@ -115,7 +115,7 @@ Monster* LevelLoader::createMonster(vector<string> monsterString) {
 	return newMonster;
 }
 std::vector<Monster*> LevelLoader::loadBoss(){
-	buffer.loadFromFile("bossEnter.wav");
+	buffer.loadFromFile("Audio/bossEnter.wav");
 	sound.setBuffer(buffer);
 	sound.play();
 	vector<Monster*> newMonsters;

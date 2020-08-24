@@ -14,7 +14,7 @@ HoverMonster::HoverMonster(float x, float y)
 	velocity = sf::Vector2f(0.0f, 0.0f);
 
 	//Load Texture
-	if (!texture.loadFromFile("harpy.png"))
+	if (!texture.loadFromFile("Images/harpy.png"))
 	{
 		std::cout << "Failed to Load image";
 	} else {
@@ -24,7 +24,7 @@ HoverMonster::HoverMonster(float x, float y)
 	sprite.setPosition(position);
 
 	//Load Wings Texture
-	if (!wingTexture.loadFromFile("harpy_wings.png"))
+	if (!wingTexture.loadFromFile("Images/harpy_wings.png"))
 	{
 		std::cout << "Couldn't load wings";
 	} else {

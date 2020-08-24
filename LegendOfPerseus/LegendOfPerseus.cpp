@@ -42,10 +42,10 @@ void startLevel(string levelFileName, sf::RenderWindow &window, Menu menu) {
 
 	//Create "Paused" text to draw on top
 	sf::Font font = sf::Font();
-	font.loadFromFile("arcade.ttf");
+	font.loadFromFile("Font/arcade.ttf");
 	sf::Text pausescreentext = sf::Text();
 	pausescreentext.setString("Paused");
-	pausescreentext.setColor(sf::Color::White);
+	pausescreentext.setFillColor(sf::Color::White);
 	pausescreentext.setFont(font);
 	pausescreentext.setPosition (SCREENSIZE_X/2 - pausescreentext.getLocalBounds().width/2, 
 								 SCREENSIZE_Y/2 - pausescreentext.getLocalBounds().height/2);
@@ -58,7 +58,7 @@ void startLevel(string levelFileName, sf::RenderWindow &window, Menu menu) {
 	sf::Music boss;
 	sf::Music victory;
 	sf::Music gameover;
-	if (!bgMusic.openFromFile("BGMusic.ogg")){
+	if (!bgMusic.openFromFile("Audio/BGMusic.ogg")){
 		cout << "Failed to Load Music";
 	} else {
 		bgMusic.setVolume(50);
@@ -171,7 +171,7 @@ void startLevel(string levelFileName, sf::RenderWindow &window, Menu menu) {
 				for (unsigned int j=0;j<newMonsters.size();j++){
 					monsters.push_back(newMonsters[j]);
 				}
-				if (!boss.openFromFile("boss.ogg")){
+				if (!boss.openFromFile("Audio/boss.ogg")){
 					cout << "Failed to Load Music";
 				} else {
 					boss.setVolume(50);
@@ -183,7 +183,7 @@ void startLevel(string levelFileName, sf::RenderWindow &window, Menu menu) {
 				bgMusic.stop();
 				boss.stop();
 				levelCompleted = true;
-				if (!victory.openFromFile("victory.ogg")){
+				if (!victory.openFromFile("Audio/victory.ogg")){
 					cout << "Failed to Load Music";
 				} else {
 					victory.setVolume(50);
@@ -199,7 +199,7 @@ void startLevel(string levelFileName, sf::RenderWindow &window, Menu menu) {
 		{
 			bgMusic.stop();
 			boss.stop();
-			if (!gameover.openFromFile("gameover.ogg")){
+			if (!gameover.openFromFile("Audio/gameover.ogg")){
 				cout << "Failed to Load Music";
 			} else {
 				gameover.setVolume(50);

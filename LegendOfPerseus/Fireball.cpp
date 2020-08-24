@@ -8,7 +8,7 @@ Fireball::Fireball(sf::Vector2f origin)
 	position = origin;
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("fireball.png"))
+	if (!texture.loadFromFile("Images/fireball.png"))
 	{
 		std::cout << "Failed to Load image";
 	} else {
@@ -29,7 +29,7 @@ Fireball::Fireball(sf::Vector2f origin, sf::Vector2f initialSpeed) //overloaded 
 	position = origin;
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("fireball.png"))
+	if (!texture.loadFromFile("Images/fireball.png"))
 	{
 		std::cout << "Failed to Load image";
 	} else {

@@ -12,7 +12,7 @@ FollowMonster::FollowMonster(float x, float y)
 	position = sf::Vector2f(x, y);
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("eyeball.png")) //TODO: do not I REPEAT DO NOT SHIP WITH noimage.png set as any texture
+	if (!texture.loadFromFile("Images/eyeball.png")) //TODO: do not I REPEAT DO NOT SHIP WITH noimage.png set as any texture
 	{
 		std::cout << "Failed to Load image";
 	} else {

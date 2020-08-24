@@ -10,7 +10,7 @@ Chimera::Chimera(float x, float y)
 	int width = 265;
 	int height = 195;
 	isAlive = true;
-	if (!texture.loadFromFile("chimera_body.png"))
+	if (!texture.loadFromFile("Images/chimera_body.png"))
 	{
 	std::cout << "Failed to Load image";
 	} else {

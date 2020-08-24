@@ -8,7 +8,7 @@ Spear::Spear(sf::Vector2f position)
 	active = true;
 	damage = 1;
 	//Load Texture
-	if (!texture.loadFromFile("spear.png"))
+	if (!texture.loadFromFile("Images/spear.png"))
 	{
 		std::cout << "Failed to Load Spear";
 	} else {
@@ -16,7 +16,7 @@ Spear::Spear(sf::Vector2f position)
 		//sprite.setScale(sf::Vector2f(1.7f, 1.7f)); // absolute scale factor
 	}
 	sprite.setPosition(position); //Sets the position of the spear
-	buffer.loadFromFile("hit.ogg");
+	buffer.loadFromFile("Audio/hit.ogg");
 	sound.setBuffer(buffer);
 	sound.setVolume(70.0f);
 }

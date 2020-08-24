@@ -8,14 +8,14 @@ Sword::Sword(sf::Vector2f position)
 	active = true;
 	damage = 2;
 	//Load Texture
-	if (!texture.loadFromFile("slash.png"))
+	if (!texture.loadFromFile("Images/slash.png"))
 	{
 		std::cout << "Failed to Load Sword Slash";
 	} else {
 		sprite.setTexture(texture);
 	}
 	sprite.setPosition(position); //Sets the position of the slash
-	buffer.loadFromFile("slash.ogg");
+	buffer.loadFromFile("Audio/slash.ogg");
 	sound.setBuffer(buffer);
 	sound.setVolume(70.0f);
 	sound.play();

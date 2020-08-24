@@ -10,7 +10,7 @@ RamHead::RamHead(float x, float y)
 	position = sf::Vector2f(x, y);
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("chimera_ramhead.png"))
+	if (!texture.loadFromFile("Images/chimera_ramhead.png"))
 	{
 		std::cout << "Failed to Load image";
 	} else {

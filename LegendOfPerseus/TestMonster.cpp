@@ -11,7 +11,7 @@ TestMonster::TestMonster(float x, float y)
 	position = sf::Vector2f(x, y);
 	velocity = sf::Vector2f(0.0f, 0.0f);
 	//Load Texture
-	if (!texture.loadFromFile("pillar.png")) //TODO: do not I REPEAT DO NOT SHIP WITH noimage.png set as any texture
+	if (!texture.loadFromFile("Images/pillar.png")) //TODO: do not I REPEAT DO NOT SHIP WITH noimage.png set as any texture
 	{
 		std::cout << "Failed to Load image";
 	} else {

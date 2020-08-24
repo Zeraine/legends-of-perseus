@@ -7,8 +7,8 @@ Hud::Hud(void)
 	health = 3;
 	points = 0;
 	shieldratio = 1.00;
-	life.loadFromFile("heart.png");
-	font.loadFromFile("arcade.ttf");
+	life.loadFromFile("Images/heart.png");
+	font.loadFromFile("Font/arcade.ttf");
 	heart.setTexture(life);
 	for (int i = 0; i <= 4; i++) //The max health you can get is 5
 	{
@@ -17,7 +17,7 @@ Hud::Hud(void)
 		hearts[i].setScale(.1f, .1f);
 	}
 	scoreText.setPosition (750, 5);
-	scoreText.setColor(sf::Color::Black);
+	scoreText.setFillColor(sf::Color::Black);
 	scoreText.setFont(font);
 	shieldbarbackground = sf::RectangleShape(sf::Vector2f(100,10));
 	shieldbarbackground.setFillColor(sf::Color(255,0,0));

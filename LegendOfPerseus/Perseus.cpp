@@ -31,7 +31,7 @@ Perseus::Perseus(void) : shieldTimerMax(120)
 	counter = 0;
 
 	//Load Body Texture
-	if (!bodyTexture.loadFromFile("perseus.png"))
+	if (!bodyTexture.loadFromFile("Images/perseus.png"))
 	{
 		//Error
 	} else {
@@ -40,7 +40,7 @@ Perseus::Perseus(void) : shieldTimerMax(120)
 	}
 
 	//Load Wings Texture
-	if (!wingTexture.loadFromFile("wings.png"))
+	if (!wingTexture.loadFromFile("Images/wings.png"))
 	{
 		//Error
 	} else {
@@ -49,7 +49,7 @@ Perseus::Perseus(void) : shieldTimerMax(120)
 	}
 
 	//Load Shield Texture
-	if (!shieldTexture.loadFromFile("shield.png"))
+	if (!shieldTexture.loadFromFile("Images/shield.png"))
 	{
 		//Error
 	} else {
